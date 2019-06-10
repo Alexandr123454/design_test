@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.background {
+  background-color: #EEEEEE;
+  transition-duration: 1s;
+}
+
+.people {
+  display: grid;
+  grid-template-columns: repeat(4, 200px);
+  grid-template-rows: repeat(3, 231px);
+  grid-column-gap: 30px;
+  grid-row-gap: 40px;
+  justify-content: center;
+}
+
+.person {
+  position: relative;
+  margin: 30px 0 30px;
+  cursor: pointer;
+  transition-duration: 1s;
+}
+
+.photo > img {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  transition-duration: 1s;
+}
+
+.rank {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+
+  width: 32px;
+  height: 32px;
+  left: 158px;
+  top: 91px;
+
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  font-family: Arial;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 600;
+  color: #8B0000;
+  transition-duration: 1s;
+}
+
+.details {
+  text-align: center;
+}
+
+.name {
+  font-family: Arial;
+  font-size: 20px;
+  line-height: 23px;
+  color: #2F4F4F;
+}
+
+.extra {
+  display: none;
+}
+
+img:hover {
+  border-radius: 60px;
+  margin-bottom: 1px;
+}
+
+.person:hover {
+  transform: scale(1.08);
+
+  border-radius: 12px;
+  width: 264px;
+  height: 344.4px;
+}
+
+.extra:hover {
+  display: unset;
+  font-family: Arial;
+  font-size: 21.6px;
+  line-height: 25px;
+  text-align: center;
+  color: #000000;
+}
+
+.background:hover {
+  transform: scale(1.08);
+  width: 264px;
+  height: 300px;
+}
+
+
